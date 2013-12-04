@@ -42,7 +42,7 @@
         
         
         optionBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-        optionBtn.frame=CGRectMake(275, 5, 40, 40);
+        optionBtn.frame=CGRectMake(275, 12, 25, 25);
         optionBtn.backgroundColor=[UIColor clearColor];
         [optionBtn setBackgroundImage:[UIImage imageNamed:@"Menu.png"] forState:UIControlStateNormal];
         [optionBtn setBackgroundImage:[UIImage imageNamed:@"Menu.png"] forState:UIControlStateHighlighted];
