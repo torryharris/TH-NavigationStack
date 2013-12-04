@@ -78,19 +78,6 @@
 
 
 
-
--(UIImage *)chooseFavImage:(BOOL)flag{
-
-    UIImage *favImage ;
-    
-    if (flag) {
-        favImage = [UIImage imageNamed:@"favSelected.png"];
-    }else{
-        favImage = [UIImage imageNamed:@"favBlank.png"];
-    }
-    
-    return favImage;
-}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

@@ -245,13 +245,13 @@ NSDictionary *custDictinary;
         NSString *name = [drawArr objectAtIndex:i];
         
                 
-        ControllerView *mfv = [[ControllerView alloc]initWithFrame:(CGRectMake(0, yPos, 320, EACH_MODEL_HEIGHT)) withTitle:name withCustomizationDict:custDictinary];
-        [mainScrollView addSubview:mfv];
+        ControllerView *contFullview = [[ControllerView alloc]initWithFrame:(CGRectMake(0, yPos, 320, EACH_MODEL_HEIGHT)) withTitle:name withCustomizationDict:custDictinary];
+        [mainScrollView addSubview:contFullview];
         
        
-        [mfv.optionBtn addTarget:self action:@selector(optionBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [contFullview.optionBtn addTarget:self action:@selector(optionBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
         
-        [mfv.dummyBtn addTarget:self action:@selector(dummyBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [contFullview.dummyBtn addTarget:self action:@selector(dummyBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
         
         yPos += EACH_MODEL_HEIGHT;
     }
